@@ -1,0 +1,46 @@
+<div class="login-container">
+  <!-- Left Side (Image) -->
+  <div class="left-panel d-none d-md-block">
+    <img src="https://static.vecteezy.com/system/resources/previews/048/970/820/non_2x/creative-online-platform-flat-design-graphic-free-png.png" alt="School Image">
+  </div>
+
+  <!-- Right Side (Form Section) -->
+  <div class="right-panel d-flex align-items-center justify-content-center">
+    <div class="form-box">
+      <h2 class="text-center mb-4">🔑 School Login</h2>
+
+      <form >
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" [(ngModel)]="loginData.email" name="email" class="form-control" placeholder="Enter email" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" [(ngModel)]="loginData.password" name="password" class="form-control" placeholder="Enter password" required>
+        </div>
+
+        <button type="submit" class="btn btn-custom w-100 py-2">Login</button>
+
+        <p class="text-center mt-3">
+          Not registered? <a routerLink="/register" class="text-white">Register here</a>
+        </p>
+
+        <div class="social-login text-center mt-4">
+          <p>Or login with</p>
+          <div class="d-flex justify-content-center gap-3">
+            <button class="btn btn-google d-flex align-items-center px-3 text-white">
+              <img src="https://img.icons8.com/color/24/000000/google-logo.png"/> Google
+            </button>
+            <button class="btn btn-facebook d-flex align-items-center px-3 text-white">
+              <img src="https://img.icons8.com/color/24/000000/facebook-new.png"/> Facebook
+            </button>
+            <button class="btn btn-microsoft d-flex align-items-center px-3 text-white">
+              <img src="https://img.icons8.com/color/24/000000/microsoft.png"/> Microsoft
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
